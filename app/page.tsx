@@ -14,7 +14,7 @@ export default function Home() {
         Billo Invoicing <span className="text-primary">Help</span>
       </h1>
       <p className="mb-8 md:text-lg text-base  max-w-[1200px] text-muted-foreground text-left sm:text-center">
-        The help center is a comprehensive guide on using Billo Invoicing. Whether you're a new user or an experienced one, we've got you covered.
+        The help center is a comprehensive guide on using Billo Invoicing. Whether you&apos;re a new user or an experienced one, we&apos;ve got you covered.
       </p>
       <div className="sm:flex sm:flex-row grid grid-cols-2 items-center sm;gap-5 gap-3 mb-8">
         <Link href={`/help${page_routes[0].href}`} className={buttonVariants({ className: "px-6", size: "lg" })}>
