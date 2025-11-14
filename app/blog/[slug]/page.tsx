@@ -18,10 +18,38 @@ export async function generateMetadata(props: PageProps) {
   const { slug } = params;
   const res = await getBlogFrontmatter(slug);
   if (!res) return {};
-  const { title, description } = res;
+  const { title, description, cover, date, authors } = res;
+  const url = `https://billoinvoicing.com/blog/${slug}`;
+  
   return {
     title,
     description,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: `${title} | Billo Invoicing Blog`,
+      description,
+      url,
+      siteName: "Billo Invoicing Help Center",
+      type: "article",
+      publishedTime: date,
+      authors: authors.map((a) => a.username),
+      images: [
+        {
+          url: cover,
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${title} | Billo Invoicing Blog`,
+      description,
+      images: [cover],
+    },
   };
 }
 

@@ -1,0 +1,18 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Disallow admin and protected routes
+Disallow: /main/
+Disallow: /admin/
+Disallow: /api/
+
+# Allow help documentation
+Allow: /help/
+
+# Allow blog
+Allow: /blog/
+
+# Sitemap location
+Sitemap: https://billoinvoicing.com/sitemap.xml
+

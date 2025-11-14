@@ -5,6 +5,7 @@ import { page_routes } from "@/lib/routes-config";
 import { notFound } from "next/navigation";
 import { getCompiledDocsForSlug, getDocFrontmatter } from "@/lib/markdown";
 import { Typography } from "@/components/typography";
+import Script from "next/script";
 
 type PageProps = {
   params: Promise<{ slug: string[] }>;
@@ -37,6 +38,59 @@ export default async function DocsPage(props: PageProps) {
       </div>
 
       <Toc path={pathName} />
+      <Script
+        type="application/ld+json"
+        id="article-schema"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: res.frontmatter.title,
+            description: res.frontmatter.description,
+            url: `https://billoinvoicing.com/help/${pathName}`,
+            publisher: {
+              "@type": "Organization",
+              name: "Billo Software",
+              url: "https://billoinvoicing.com",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://billoinvoicing.com/img/billo-media/icon-color-square.png",
+              },
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": `https://billoinvoicing.com/help/${pathName}`,
+            },
+          }),
+        }}
+      />
+      <Script
+        type="application/ld+json"
+        id="breadcrumb-schema"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Help",
+                item: "https://billoinvoicing.com/help",
+              },
+              ...slug.map((path, index) => ({
+                "@type": "ListItem",
+                position: index + 2,
+                name: path
+                  .split("-")
+                  .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+                  .join(" "),
+                item: `https://billoinvoicing.com/help/${slug.slice(0, index + 1).join("/")}`,
+              })),
+            ],
+          }),
+        }}
+      />
     </div>
   );
 }
@@ -49,9 +103,36 @@ export async function generateMetadata(props: PageProps) {
   const res = await getDocFrontmatter(pathName);
   if (!res) return {};
   const { title, description } = res;
+  
+  const url = `https://billoinvoicing.com/help/${pathName}`;
+  
   return {
     title,
     description,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: `${title} | Billo Invoicing Help`,
+      description,
+      url,
+      siteName: "Billo Invoicing Help Center",
+      type: "article",
+      images: [
+        {
+          url: "/public-og.png",
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${title} | Billo Invoicing Help`,
+      description,
+      images: ["/public-og.png"],
+    },
   };
 }
 

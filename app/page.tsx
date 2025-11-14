@@ -3,6 +3,49 @@ import { page_routes } from "@/lib/routes-config";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { LinkSquare01Icon, ComputerTerminal01Icon } from "@hugeicons/core-free-icons";
 import Link from "next/link";
+import { Metadata } from "next";
+import Script from "next/script";
+
+export const metadata: Metadata = {
+  title: "Billo Invoicing Help Center",
+  description:
+    "Comprehensive help center and documentation for Billo Invoicing. Learn how to create invoices, manage clients, track payments, set up recurring invoices, and streamline your invoicing workflow.",
+  keywords: [
+    "Billo Invoicing help",
+    "invoice software documentation",
+    "how to create invoices",
+    "invoice management guide",
+    "client management",
+    "payment tracking",
+    "recurring invoices",
+    "invoice templates",
+  ],
+  openGraph: {
+    title: "Billo Invoicing Help Center - Documentation & Guides",
+    description: "Comprehensive help center and documentation for Billo Invoicing. Learn how to create invoices, manage clients, track payments, and streamline your invoicing workflow.",
+    url: "https://billoinvoicing.com",
+    siteName: "Billo Invoicing Help Center",
+    images: [
+      {
+        url: "/public-og.png",
+        width: 1200,
+        height: 630,
+        alt: "Billo Invoicing Help Center",
+      },
+    ],
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Billo Invoicing Help Center",
+    description: "Comprehensive help center and documentation for Billo Invoicing.",
+    images: ["/public-og.png"],
+  },
+  alternates: {
+    canonical: "https://billoinvoicing.com",
+  },
+};
 
 export default function Home() {
   return (
@@ -31,6 +74,46 @@ export default function Home() {
           Read Blog
         </Link>
       </div>
+      <Script
+        type="application/ld+json"
+        id="homepage-schema"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "Billo Invoicing Help Center",
+            url: "https://billoinvoicing.com",
+            description: "Comprehensive help center and documentation for Billo Invoicing",
+            publisher: {
+              "@type": "Organization",
+              name: "Billo Software",
+              url: "https://billoinvoicing.com",
+            },
+            potentialAction: {
+              "@type": "SearchAction",
+              target: {
+                "@type": "EntryPoint",
+                urlTemplate: "https://billoinvoicing.com/help?q={search_term_string}",
+              },
+              "query-input": "required name=search_term_string",
+            },
+          }),
+        }}
+      />
+      <Script
+        type="application/ld+json"
+        id="organization-schema"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Billo Software",
+            url: "https://billoinvoicing.com",
+            logo: "https://billoinvoicing.com/img/billo-media/icon-color-square.png",
+            sameAs: ["https://github.com/billosoftware"],
+          }),
+        }}
+      />
     </div>
   );
 }

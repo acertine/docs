@@ -35,9 +35,67 @@ const figtree = Figtree({
 });
 
 export const metadata: Metadata = {
-  title: "Billo Docs",
-  metadataBase: new URL("https://billoinvoicing.com/"),
-  description: "Billo Docs is a comprehensive documentation for Billo, a cloud-based invoicing solution.",
+  metadataBase: new URL("https://billoinvoicing.com"),
+  title: {
+    default: "Billo Invoicing Help Center - Documentation & Guides",
+    template: "%s | Billo Invoicing Help",
+  },
+  description: "Comprehensive help center and documentation for Billo Invoicing. Learn how to create invoices, manage clients, track payments, and streamline your invoicing workflow.",
+  keywords: [
+    "Billo Invoicing",
+    "invoice software",
+    "invoicing help",
+    "invoice documentation",
+    "invoice management",
+    "client management",
+    "payment tracking",
+    "recurring invoices",
+    "invoice templates",
+    "CIS invoices",
+    "construction industry scheme",
+    "Stripe integration",
+    "online invoicing",
+  ],
+  authors: [{ name: "Billo Software" }],
+  creator: "Billo Software",
+  publisher: "Billo Software",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_GB",
+    url: "https://billoinvoicing.com",
+    siteName: "Billo Invoicing Help Center",
+    title: "Billo Invoicing Help Center - Documentation & Guides",
+    description: "Comprehensive help center and documentation for Billo Invoicing. Learn how to create invoices, manage clients, track payments, and streamline your invoicing workflow.",
+    images: [
+      {
+        url: "/public-og.png",
+        width: 1200,
+        height: 630,
+        alt: "Billo Invoicing Help Center",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Billo Invoicing Help Center - Documentation & Guides",
+    description: "Comprehensive help center and documentation for Billo Invoicing.",
+    images: ["/public-og.png"],
+    creator: "@billoinvoicing",
+  },
+  alternates: {
+    canonical: "https://billoinvoicing.com",
+  },
 };
 
 export default function RootLayout({
@@ -68,7 +126,6 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="Billo Invoicing" />
         <link rel="manifest" href="/favicon/site.webmanifest" />
         <meta name="theme-color" content="#009966" />
-        <link rel="canonical" href="https://billoinvoicing.com" />
       </head>
       <body className={` ${libreBaskerville.variable} ${figtree.variable} `} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>

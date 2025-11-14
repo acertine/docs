@@ -60,6 +60,169 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Help Documentation Pages -->
+  <!-- Getting Started -->
+  <url>
+    <loc>https://billoinvoicing.com/help/getting-started/introduction</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://billoinvoicing.com/help/getting-started/setting-up-your-account</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://billoinvoicing.com/help/getting-started/navigating-the-dashboard</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Invoices -->
+  <url>
+    <loc>https://billoinvoicing.com/help/invoices/creating-your-first-invoice</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://billoinvoicing.com/help/invoices/adding-and-managing-line-items</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://billoinvoicing.com/help/invoices/sending-invoices-to-clients</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://billoinvoicing.com/help/invoices/understanding-invoice-statuses</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://billoinvoicing.com/help/invoices/using-invoice-templates</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://billoinvoicing.com/help/invoices/set-up-recurring-invoices</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Quotes -->
+  <url>
+    <loc>https://billoinvoicing.com/help/quotes/creating-and-sending-quotes</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://billoinvoicing.com/help/quotes/converting-quotes-to-invoices</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Client Management -->
+  <url>
+    <loc>https://billoinvoicing.com/help/client-management/adding-and-managing-clients</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://billoinvoicing.com/help/client-management/importing-clients-via-csv</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://billoinvoicing.com/help/client-management/cis-settings-for-clients</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Payments -->
+  <url>
+    <loc>https://billoinvoicing.com/help/payments/setting-up-stripe-connect</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://billoinvoicing.com/help/payments/tracking-payments</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Construction Industry Scheme -->
+  <url>
+    <loc>https://billoinvoicing.com/help/construction-industry-scheme/understanding-construction-industry-scheme</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://billoinvoicing.com/help/construction-industry-scheme/creating-construction-industry-scheme-invoices</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Reports and Analytics -->
+  <url>
+    <loc>https://billoinvoicing.com/help/reports-and-analytics/understanding-financial-reports</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Settings and Customisation -->
+  <url>
+    <loc>https://billoinvoicing.com/help/settings-and-customisation/profile-settings</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://billoinvoicing.com/help/settings-and-customisation/business-information</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://billoinvoicing.com/help/settings-and-customisation/invoice-defaults</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Troubleshooting -->
+  <url>
+    <loc>https://billoinvoicing.com/help/troubleshooting/common-issues-and-solutions</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://billoinvoicing.com/help/troubleshooting/browser-compatibility</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- External Pages -->
   <url>
     <loc>https://updates.billoinvoicing.com</loc>
