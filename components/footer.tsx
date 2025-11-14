@@ -37,7 +37,7 @@ export function FooterButtons() {
         <HugeiconsIcon icon={Triangle01Icon} className="h-4 w-4 mr-2 text-primary fill-current" />
         Deploy
       </Link>
-      <Link href="https://github.com/sponsors/nisabmohd" className={buttonVariants({ variant: "outline", size: "sm" })}>
+      <Link href="https://github.com/sponsors/v0sudo" className={buttonVariants({ variant: "outline", size: "sm" })}>
         <HugeiconsIcon icon={FavouriteIcon} className="h-4 w-4 mr-2 text-red-600 fill-current" />
         Sponsor
       </Link>
