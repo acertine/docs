@@ -34,6 +34,7 @@ export const ROUTES: EachRoute[] = [
       { title: "Understanding Invoice Statuses", href: "/understanding-invoice-statuses" },
       { title: "Using Invoice Templates", href: "/using-invoice-templates" },
       { title: "Set Up Recurring Invoices", href: "/set-up-recurring-invoices" },
+      { title: "Set Up Time Based Invoices", href: "/setting-up-time-based-invoices" },
     ],
   },
   {
