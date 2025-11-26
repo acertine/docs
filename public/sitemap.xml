@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Landing Page -->
   <url>
-    <loc>https://billoinvoicing.com</loc>
+    <loc>https://flow.acertine.com</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -10,21 +10,21 @@
   
   <!-- Main Public Pages -->
   <url>
-    <loc>https://billoinvoicing.com/about</loc>
+    <loc>https://flow.acertine.com/about</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://billoinvoicing.com/contact</loc>
+    <loc>https://flow.acertine.com/contact</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://billoinvoicing.com/frequently-asked-questions</loc>
+    <loc>https://flow.acertine.com/frequently-asked-questions</loc>
     <lastmod>2025-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -32,14 +32,14 @@
   
   <!-- Legal Pages -->
   <url>
-    <loc>https://billoinvoicing.com/privacy-policy</loc>
+    <loc>https://flow.acertine.com/privacy-policy</loc>
     <lastmod>2025-08-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   
   <url>
-    <loc>https://billoinvoicing.com/terms-of-service</loc>
+    <loc>https://flow.acertine.com/terms-of-service</loc>
     <lastmod>2025-08-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -47,14 +47,14 @@
   
   <!-- Authentication Pages -->
   <url>
-    <loc>https://billoinvoicing.com/auth/sign-in</loc>
+    <loc>https://flow.acertine.com/auth/sign-in</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://billoinvoicing.com/auth/sign-up</loc>
+    <loc>https://flow.acertine.com/auth/sign-up</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -63,19 +63,19 @@
   <!-- Help Documentation Pages -->
   <!-- Getting Started -->
   <url>
-    <loc>https://docs.billoinvoicing.com/help/getting-started/introduction</loc>
+    <loc>https://docs.acertine.com/flow-help/getting-started/introduction</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://docs.billoinvoicing.com/help/getting-started/setting-up-your-account</loc>
+    <loc>https://docs.acertine.com/flow-help/getting-started/setting-up-your-account</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://docs.billoinvoicing.com/help/getting-started/navigating-the-dashboard</loc>
+    <loc>https://docs.acertine.com/flow-help/getting-started/navigating-the-dashboard</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -83,43 +83,43 @@
 
   <!-- Invoices -->
   <url>
-    <loc>https://docs.billoinvoicing.com/help/invoices/creating-your-first-invoice</loc>
+    <loc>https://docs.acertine.com/flow-help/invoices/creating-your-first-invoice</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://docs.billoinvoicing.com/help/invoices/adding-and-managing-line-items</loc>
+    <loc>https://docs.acertine.com/flow-help/invoices/adding-and-managing-line-items</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://docs.billoinvoicing.com/help/invoices/sending-invoices-to-clients</loc>
+    <loc>https://docs.acertine.com/flow-help/invoices/sending-invoices-to-clients</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://docs.billoinvoicing.com/help/invoices/understanding-invoice-statuses</loc>
+    <loc>https://docs.acertine.com/flow-help/invoices/understanding-invoice-statuses</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://docs.billoinvoicing.com/help/invoices/using-invoice-templates</loc>
+    <loc>https://docs.acertine.com/flow-help/invoices/using-invoice-templates</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://docs.billoinvoicing.com/help/invoices/set-up-recurring-invoices</loc>
+    <loc>https://docs.acertine.com/flow-help/invoices/set-up-recurring-invoices</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://docs.billoinvoicing.com/help/invoices/setting-up-time-based-invoices</loc>
+    <loc>https://docs.acertine.com/flow-help/invoices/setting-up-time-based-invoices</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -127,13 +127,13 @@
 
   <!-- Quotes -->
   <url>
-    <loc>https://docs.billoinvoicing.com/help/quotes/creating-and-sending-quotes</loc>
+    <loc>https://docs.acertine.com/flow-help/quotes/creating-and-sending-quotes</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://docs.billoinvoicing.com/help/quotes/converting-quotes-to-invoices</loc>
+    <loc>https://docs.acertine.com/flow-help/quotes/converting-quotes-to-invoices</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -141,19 +141,19 @@
 
   <!-- Client Management -->
   <url>
-    <loc>https://docs.billoinvoicing.com/help/client-management/adding-and-managing-clients</loc>
+    <loc>https://docs.acertine.com/flow-help/client-management/adding-and-managing-clients</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://docs.billoinvoicing.com/help/client-management/importing-clients-via-csv</loc>
+    <loc>https://docs.acertine.com/flow-help/client-management/importing-clients-via-csv</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://docs.billoinvoicing.com/help/client-management/cis-settings-for-clients</loc>
+    <loc>https://docs.acertine.com/flow-help/client-management/cis-settings-for-clients</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -161,13 +161,13 @@
 
   <!-- Payments -->
   <url>
-    <loc>https://docs.billoinvoicing.com/help/payments/setting-up-stripe-connect</loc>
+    <loc>https://docs.acertine.com/flow-help/payments/setting-up-stripe-connect</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://docs.billoinvoicing.com/help/payments/tracking-payments</loc>
+    <loc>https://docs.acertine.com/flow-help/payments/tracking-payments</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -175,13 +175,13 @@
 
   <!-- Construction Industry Scheme -->
   <url>
-    <loc>https://docs.billoinvoicing.com/help/construction-industry-scheme/understanding-construction-industry-scheme</loc>
+    <loc>https://docs.acertine.com/flow-help/construction-industry-scheme/understanding-construction-industry-scheme</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://docs.billoinvoicing.com/help/construction-industry-scheme/creating-construction-industry-scheme-invoices</loc>
+    <loc>https://docs.acertine.com/flow-help/construction-industry-scheme/creating-construction-industry-scheme-invoices</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -189,7 +189,7 @@
 
   <!-- Reports and Analytics -->
   <url>
-    <loc>https://docs.billoinvoicing.com/help/reports-and-analytics/understanding-financial-reports</loc>
+    <loc>https://docs.acertine.com/flow-help/reports-and-analytics/understanding-financial-reports</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -197,19 +197,19 @@
 
   <!-- Settings and Customisation -->
   <url>
-    <loc>https://docs.billoinvoicing.com/help/settings-and-customisation/profile-settings</loc>
+    <loc>https://docs.acertine.com/flow-help/settings-and-customisation/profile-settings</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://docs.billoinvoicing.com/help/settings-and-customisation/business-information</loc>
+    <loc>https://docs.acertine.com/flow-help/settings-and-customisation/business-information</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://docs.billoinvoicing.com/help/settings-and-customisation/invoice-defaults</loc>
+    <loc>https://docs.acertine.com/flow-help/settings-and-customisation/invoice-defaults</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -217,13 +217,13 @@
 
   <!-- Troubleshooting -->
   <url>
-    <loc>https://docs.billoinvoicing.com/help/troubleshooting/common-issues-and-solutions</loc>
+    <loc>https://docs.acertine.com/flow-help/troubleshooting/common-issues-and-solutions</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://docs.billoinvoicing.com/help/troubleshooting/browser-compatibility</loc>
+    <loc>https://docs.acertine.com/flow-help/troubleshooting/browser-compatibility</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -231,43 +231,43 @@
 
   <!-- Blog Posts -->
   <url>
-    <loc>https://docs.billoinvoicing.com/blogs/20240825-billo-invoicing-mvp</loc>
+    <loc>https://docs.acertine.com/blogs/20240825-billo-invoicing-mvp</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://docs.billoinvoicing.com/blogs/20250829-stripe-integration</loc>
+    <loc>https://docs.acertine.com/blogs/20250829-stripe-integration</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://docs.billoinvoicing.com/blogs/20250907-quotes</loc>
+    <loc>https://docs.acertine.com/blogs/20250907-quotes</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://docs.billoinvoicing.com/blogs/20250917-user-experience</loc>
+    <loc>https://docs.acertine.com/blogs/20250917-user-experience</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://docs.billoinvoicing.com/blogs/20251031-updates</loc>
+    <loc>https://docs.acertine.com/blogs/20251031-updates</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://docs.billoinvoicing.com/blogs/20251114-version-one</loc>
+    <loc>https://docs.acertine.com/blogs/20251114-version-one</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://docs.billoinvoicing.com/blogs/20251118-date-range-calculations</loc>
+    <loc>https://docs.acertine.com/blogs/20251118-date-range-calculations</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -275,14 +275,14 @@
 
   <!-- External Pages -->
   <url>
-    <loc>https://updates.billoinvoicing.com</loc>
+    <loc>https://updates.flow.acertine.com</loc>
     <lastmod>2025-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://status.billoinvoicing.com</loc>
+    <loc>https://status.flow.acertine.com</loc>
     <lastmod>2025-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

@@ -14,5 +14,5 @@ Allow: /help/
 Allow: /blog/
 
 # Sitemap location
-Sitemap: https://billoinvoicing.com/sitemap.xml
+Sitemap: https://flow.acertine.com/sitemap.xml
 

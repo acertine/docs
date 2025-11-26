@@ -12,8 +12,8 @@ import { GithubIcon, NewTwitterIcon, ComputerTerminal01Icon } from "@hugeicons/c
 
 export const NAVLINKS = [
   {
-    title: "Help Center",
-    href: `/help${page_routes[0].href}`,
+    title: "Flow - Help Center",
+    href: `/flow-help${page_routes[0].href}`,
   },
   {
     title: "Blog",
@@ -71,7 +71,7 @@ export function Navbar() {
                 <HugeiconsIcon icon={GithubIcon} className="h-4 w-4" />
               </Link>
               <Link
-                href="https://x.com/billoinvoicing"
+                href="https://x.com/acertine"
                 target="_blank"
                 className={buttonVariants({
                   variant: "ghost",

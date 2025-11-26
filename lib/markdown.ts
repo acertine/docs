@@ -112,7 +112,7 @@ function sluggify(text: string) {
 
 function getDocsContentPath(slug: string) {
   const segments = slug.split("/").filter((it) => it);
-  return path.join(process.cwd(), "contents", "help", ...segments, "index.mdx");
+  return path.join(process.cwd(), "contents", "flow-help", ...segments, "index.mdx");
 }
 
 function justGetFrontmatterFromMD<Frontmatter>(rawMd: string): Frontmatter {
@@ -138,7 +138,7 @@ export async function getAllChilds(pathString: string) {
       const raw = await fs.readFile(getDocsContentPath(totalSlug), "utf-8");
       return {
         ...justGetFrontmatterFromMD<BaseMdxFrontmatter>(raw),
-        href: `/help${prevHref}${it.href}`,
+        href: `/flow-help${prevHref}${it.href}`,
       };
     })
   );

@@ -16,7 +16,7 @@ export default function Pagination({ pathname }: { pathname: string }) {
               variant: "outline",
               className: "no-underline w-full flex flex-col sm:pl-7 pl-3 sm:py-10 py-8 !items-start text-xs sm:text-sm",
             })}
-            href={`/docs${res.prev.href}`}
+            href={`/flow-help${res.prev.href}`}
           >
             <span className="flex items-center text-muted-foreground text-xs">
               <HugeiconsIcon icon={ArrowLeft01Icon} className="w-[1rem] h-[1rem] mr-1" />
@@ -33,7 +33,7 @@ export default function Pagination({ pathname }: { pathname: string }) {
               variant: "outline",
               className: "no-underline w-full flex flex-col sm:pr-7 pr-3 sm:py-10 py-8 !items-end text-xs sm:text-sm",
             })}
-            href={`/help${res.next.href}`}
+            href={`/flow-help${res.next.href}`}
           >
             <span className="flex items-center text-muted-foreground text-xs">
               Next

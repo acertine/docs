@@ -19,8 +19,8 @@ export async function generateMetadata(props: PageProps) {
   const res = await getBlogFrontmatter(slug);
   if (!res) return {};
   const { title, description, cover, date, authors } = res;
-  const url = `https://billoinvoicing.com/blog/${slug}`;
-  
+  const url = `https://docs.acertine.com/blog/${slug}`;
+
   return {
     title,
     description,
@@ -28,10 +28,10 @@ export async function generateMetadata(props: PageProps) {
       canonical: url,
     },
     openGraph: {
-      title: `${title} | Billo Invoicing Blog`,
+      title: `${title} | Acertine Blog`,
       description,
       url,
-      siteName: "Billo Invoicing Help Center",
+      siteName: "Acertine Blog",
       type: "article",
       publishedTime: date,
       authors: authors.map((a) => a.username),
@@ -46,7 +46,7 @@ export async function generateMetadata(props: PageProps) {
     },
     twitter: {
       card: "summary_large_image",
-      title: `${title} | Billo Invoicing Blog`,
+      title: `${title} | Acertine Blog`,
       description,
       images: [cover],
     },
