@@ -51,7 +51,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="flex sm:min-h-[80.vh] min-h-[82vh] flex-col sm:items-center justify-center text-center sm:py-8 py-14">
-      <Link href="https://github.com/billosoftware/api-docs" target="_blank" className="mb-5 sm:text-lg flex items-center gap-2 underline underline-offset-4 sm:-mt-12">
+      <Link href="https://github.com/acertine/docs" target="_blank" className="mb-5 sm:text-lg flex items-center gap-2 underline underline-offset-4 sm:-mt-12">
         Follow along on GitHub <HugeiconsIcon icon={LinkSquare01Icon} className="w-4 h-4 font-extrabold" />
       </Link>
       <h1 className="text-[1.80rem] leading-8 sm:px-8 md:leading-[4.5rem] font-bold mb-4 sm:text-6xl text-left sm:text-center">

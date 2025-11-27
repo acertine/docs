@@ -61,7 +61,7 @@ export function Navbar() {
           <div className="flex items-center justify-between sm:gap-2">
             <div className="flex ml-4 sm:ml-0">
               <Link
-                href="https://github.com/billosoftware/api-docs"
+                href="https://github.com/acertine/docs"
                 target="_blank"
                 className={buttonVariants({
                   variant: "ghost",
