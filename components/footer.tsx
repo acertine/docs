@@ -26,7 +26,7 @@ export function Footer() {
           <p className="text-center flex">
             Follow us on{" "}
             <Link className="px-1 underline underline-offset-2 flex items-center gap-2" href="https://x.com/acertine_">
-              <HugeiconsIcon icon={NewTwitterIcon} className="w-4 h-4 font-extrabold" /> v0sudo
+              <HugeiconsIcon icon={NewTwitterIcon} className="w-4 h-4 font-extrabold" /> acertine_
             </Link>
           </p>
         </div>
