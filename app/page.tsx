@@ -71,7 +71,7 @@ export default function Home() {
         >
           Read Blog
         </Link>
-        <Link href={`/help${page_routes[0].href}`} className={buttonVariants({ variant: "default", className: "px-6", size: "lg" })}>
+        <Link href={`/flow-help${page_routes[0].href}`} className={buttonVariants({ variant: "default", className: "px-6", size: "lg" })}>
           Get Started
         </Link>
       </div>
