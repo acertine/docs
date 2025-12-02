@@ -136,6 +136,12 @@ export default function RootLayout({
           gtag("config", "G-P05MZVJ5H7");
         `}
         </Script>
+        <Script
+          data-website-id="dfid_Kt1kSBd0rDBTkKpKHgmS5"
+          data-domain="flow.acertine.com"
+          data-allow-localhost="true"
+          src="https://datafa.st/js/script.js"
+        />
         <meta name="apple-mobile-web-app-title" content="Acertine" />
 
         <meta name="theme-color" content="#009966" />
