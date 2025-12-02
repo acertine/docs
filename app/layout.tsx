@@ -138,7 +138,7 @@ export default function RootLayout({
         </Script>
         <Script
           data-website-id="dfid_Kt1kSBd0rDBTkKpKHgmS5"
-          data-domain="flow.acertine.com"
+          data-domain="docs.acertine.com"
           data-allow-localhost="true"
           src="https://datafa.st/js/script.js"
         />
