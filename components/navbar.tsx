@@ -8,7 +8,8 @@ import { page_routes } from "@/lib/routes-config";
 import { SheetClose } from "@/components/ui/sheet";
 import AlgoliaSearch from "./algolia-search";
 import BilloIcon from "./billo-icon";
-import { GithubIcon, NewTwitterIcon, ComputerTerminal01Icon } from "@hugeicons/core-free-icons";
+import { GithubIcon, NewTwitterIcon, ComputerTerminal01Icon, ArrowRight01Icon } from "@hugeicons/core-free-icons";
+import { cn } from "@/lib/utils";
 
 export const NAVLINKS = [
   {
@@ -57,6 +58,10 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center sm:justify-normal justify-between sm:gap-3 ml-1 sm:w-fit w-[90%]">
+          <Link href="https://flow.acertine.com" className={cn(buttonVariants({ variant: "default" }), "!bg-emerald-600")}>
+            Flow
+            <HugeiconsIcon icon={ArrowRight01Icon} className="h-4 w-4" />
+          </Link>
           <AlgoliaSearch {...algolia_props} />
           <div className="flex items-center justify-between sm:gap-2">
             <div className="flex ml-4 sm:ml-0">
