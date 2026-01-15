@@ -1,7 +1,7 @@
 import { ModeToggle } from "@/components/theme-toggle";
 import { HugeiconsIcon } from "@hugeicons/react";
 import Link from "next/link";
-import { buttonVariants } from "./ui/button";
+import { Button, buttonVariants } from "./ui/button";
 import Anchor from "./anchor";
 import { SheetLeftbar } from "./leftbar";
 import { page_routes } from "@/lib/routes-config";
@@ -58,10 +58,12 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center sm:justify-normal justify-between sm:gap-3 ml-1 sm:w-fit w-[90%]">
-          <Link href="https://flow.acertine.com" className={cn(buttonVariants({ variant: "default" }), "!bg-emerald-600")}>
-            Flow
-            <HugeiconsIcon icon={ArrowRight01Icon} className="h-4 w-4" />
-          </Link>
+          <Button asChild variant="link">
+            <Link href="https://flow.acertine.com">
+              Flow
+              <HugeiconsIcon icon={ArrowRight01Icon} className="h-4 w-4" />
+            </Link>
+          </Button>
           <AlgoliaSearch {...algolia_props} />
           <div className="flex items-center justify-between sm:gap-2">
             <div className="flex ml-4 sm:ml-0">
@@ -112,7 +114,7 @@ export function NavMenu({ isSheet = false }) {
             key={item.title + item.href}
             activeClassName="!text-primary dark:font-medium font-semibold"
             absolute
-            className="flex items-center gap-1 sm:text-sm text-[14.5px] dark:text-stone-300/85 text-stone-800"
+            className="flex items-center gap-1 sm:text-sm text-[14.5px] dark:text-stone-300/85 text-stone-800 hover:text-white! hover:underline"
             href={item.href}
           >
             {item.title}

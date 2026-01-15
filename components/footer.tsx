@@ -7,15 +7,17 @@ export function Footer() {
   return (
     <footer className="border-t w-full sm:h-16">
       <div className="container flex items-center sm:justify-between justify-center sm:gap-0 gap-4 h-full text-muted-foreground text-sm flex-wrap sm:py-0 py-3 max-sm:px-4">
-        <div className="flex flex-col sm:flex-row items-center gap-3">
-          <HugeiconsIcon icon={CommandIcon} className="sm:block hidden w-5 h-5 text-muted-foreground" />
-          <p className="text-center">
-            Built by{" "}
-            <Link className="px-1 underline underline-offset-2" href="https://ldo.dev">
-              v0sudo
-            </Link>
-            .
-          </p>
+        <div className="flex w-full flex-col sm:flex-row items-center justify-between gap-3">
+          <div className="flex items-center gap-2">
+            <HugeiconsIcon icon={CommandIcon} className="sm:block hidden w-5 h-5 text-muted-foreground" />
+            <p className="text-center">
+              Built by{" "}
+              <Link className="px-1 underline underline-offset-2" href="https://ldo.dev">
+                v0sudo
+              </Link>
+              .
+            </p>
+          </div>
           <p className="text-center">
             The source code is available on{" "}
             <Link className="px-1 underline underline-offset-2" href="https://github.com/acertine/docs">
@@ -25,15 +27,15 @@ export function Footer() {
           </p>
           <p className="text-center flex">
             Follow us on{" "}
-            <Link className="px-1 underline underline-offset-2 flex items-center gap-2" href="https://x.com/acertine_">
-              <HugeiconsIcon icon={NewTwitterIcon} className="w-4 h-4 font-extrabold" /> acertine_
+            <Link className="px-1 underline underline-offset-2 flex items-center gap-2" href="https://x.com/byAcertine">
+              <HugeiconsIcon icon={NewTwitterIcon} className="w-4 h-4 font-extrabold" /> ByAcertine
             </Link>
           </p>
         </div>
 
-        <div className="gap-4 items-center hidden md:flex">
+        {/* <div className="gap-4 items-center hidden md:flex">
           <FooterButtons />
-        </div>
+        </div> */}
       </div>
     </footer>
   );
