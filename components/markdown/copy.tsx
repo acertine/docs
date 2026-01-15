@@ -18,7 +18,7 @@ export default function Copy({ content }: { content: string }) {
   }
 
   return (
-    <Button variant="secondary" className="border" size="xs" onClick={handleCopy}>
+    <Button variant="secondary" className="border" size="sm" onClick={handleCopy}>
       {isCopied ? <HugeiconsIcon icon={Tick01Icon} className="w-3 h-3" /> : <HugeiconsIcon icon={CopyIcon} className="w-3 h-3" />}
     </Button>
   );
