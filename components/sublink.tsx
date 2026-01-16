@@ -37,20 +37,22 @@ export default function SubLink({ title, href, items, noLink, level, isSheet, ta
   );
 
   if (!items) {
-    return <div className="flex flex-col">{titleOrLink}</div>;
+    return <div className="flex flex-col break-words [&_*]:whitespace-normal">{titleOrLink}</div>;
   }
 
   return (
     <div className="flex flex-col gap-1 w-full">
       <Collapsible open={isOpen} onOpenChange={setIsOpen}>
         <CollapsibleTrigger className="w-full pr-5">
-          <div className="flex items-center justify-between cursor-pointer w-full">
-            <span className="w-[95%] overflow-hidden text-ellipsis text-start">{titleOrLink}</span>
-            <span className="sm:ml-0 -mr-1.5">{!isOpen ? <HugeiconsIcon icon={ArrowRight01Icon} className="h-4 w-4" /> : <HugeiconsIcon icon={ArrowDown01Icon} className="h-4 w-4" />}</span>
+          <div className="flex items-start justify-between cursor-pointer w-full gap-2">
+            <span className="flex-1 min-w-0 text-start break-words [&_*]:whitespace-normal">{titleOrLink}</span>
+            <span className="flex-shrink-0 sm:ml-0 -mr-1.5 mt-0.5">
+              {!isOpen ? <HugeiconsIcon icon={ArrowRight01Icon} className="h-4 w-4" /> : <HugeiconsIcon icon={ArrowDown01Icon} className="h-4 w-4" />}
+            </span>
           </div>
         </CollapsibleTrigger>
         <CollapsibleContent>
-          <div className={cn("flex flex-col items-start sm:text-sm dark:text-stone-300/85 text-stone-800 ml-0.5 mt-2.5 gap-3", level > 0 && "pl-4 border-l ml-1.5")}>
+          <div className={cn("flex flex-col items-start sm:text-sm dark:text-stone-300/85 text-stone-800 ml-0.5 mt-2.5 gap-0.5", level > 0 && "pl-4 border-l ml-1.5")}>
             {items?.map((innerLink) => {
               const modifiedItems = {
                 ...innerLink,

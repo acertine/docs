@@ -10,7 +10,7 @@ import AlgoliaSearch from "./algolia-search";
 import BilloIcon from "./billo-icon";
 import { GithubIcon, NewTwitterIcon, ComputerTerminal01Icon, ArrowRight01Icon } from "@hugeicons/core-free-icons";
 import { cn } from "@/lib/utils";
-
+import Image from "next/image";
 export const NAVLINKS = [
   {
     title: "Flow - Help Center",
@@ -58,35 +58,31 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center sm:justify-normal justify-between sm:gap-3 ml-1 sm:w-fit w-[90%]">
-          <Button asChild variant="link">
-            <Link href="https://flow.acertine.com">
+          <Button asChild variant="outline" className="hidden md:flex">
+            <Link href="https://flow.acertine.com" className="flex items-center flex-row gap-2">
+              <Image src="/img/flow/logo.svg" alt="Flow" width={16} height={16} />
               Flow
-              <HugeiconsIcon icon={ArrowRight01Icon} className="h-4 w-4" />
+            </Link>
+          </Button>
+          <Button asChild variant="outline" className="hidden md:flex">
+            <Link href="https://check.acertine.com" className="flex items-center flex-row gap-2">
+              <Image src="/img/check/logo.svg" alt="Check" width={16} height={16} />
+              Check
             </Link>
           </Button>
           <AlgoliaSearch {...algolia_props} />
           <div className="flex items-center justify-between sm:gap-2">
             <div className="flex ml-4 sm:ml-0">
-              <Link
-                href="https://github.com/acertine/docs"
-                target="_blank"
-                className={buttonVariants({
-                  variant: "ghost",
-                  size: "icon",
-                })}
-              >
-                <HugeiconsIcon icon={GithubIcon} className="h-4 w-4" />
-              </Link>
-              <Link
-                href="https://x.com/acertine"
-                target="_blank"
-                className={buttonVariants({
-                  variant: "ghost",
-                  size: "icon",
-                })}
-              >
-                <HugeiconsIcon icon={NewTwitterIcon} className="h-4 w-4" />
-              </Link>
+              <Button asChild variant="ghost" size="icon">
+                <Link href="https://github.com/acertine/docs" target="_blank">
+                  <HugeiconsIcon icon={GithubIcon} className="h-4 w-4" />
+                </Link>
+              </Button>
+              <Button asChild variant="ghost" size="icon">
+                <Link href="https://x.com/intent/follow?screen_name=byAcertine" target="_blank">
+                  <HugeiconsIcon icon={NewTwitterIcon} className="h-4 w-4" />
+                </Link>
+              </Button>
               <ModeToggle />
             </div>
           </div>
@@ -114,6 +110,7 @@ export function NavMenu({ isSheet = false }) {
             key={item.title + item.href}
             activeClassName="!text-primary dark:font-medium font-semibold"
             absolute
+            showActiveDot={false}
             className="flex items-center gap-1 sm:text-sm text-[14.5px] dark:text-stone-300/85 text-stone-800 hover:text-white! hover:underline"
             href={item.href}
           >

@@ -77,14 +77,18 @@ export default async function Home() {
           >
             <HugeiconsIcon icon={LinkSquare01Icon} className="w-4 h-4" />
             <span>Follow along on GitHub</span>
-            <HugeiconsIcon icon={ArrowRight01Icon} className="w-3 h-3 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+            <HugeiconsIcon
+              icon={ArrowRight01Icon}
+              className="w-0 group-hover:w-4 invisible group-hover:visible opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-x-1 transition-all duration-300 ease-out"
+              style={{ transitionProperty: "opacity, transform, width" }}
+            />
           </Link>
 
           {/* Main Heading */}
           <div className="mb-6">
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 tracking-tight">
               <span className="bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">Acertine </span>
-              <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">Docs</span>
+              <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">Help</span>
             </h1>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-sm text-primary font-medium">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
@@ -117,22 +121,22 @@ export default async function Home() {
               })}
             >
               Get Started
-              <HugeiconsIcon icon={ArrowRight01Icon} className="ml-2 w-5 h-5" />
+              <HugeiconsIcon icon={ArrowRight01Icon} className="w-5 h-5" />
             </Link>
           </div>
 
           {/* Stats or Quick Links */}
           <div className="mt-12 flex flex-wrap items-center justify-center gap-8 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
-              <span className="font-semibold text-foreground">{gettingStartedPages.length}+</span>
-              <span>Getting Started Guides</span>
+              <span className="font-semibold text-foreground">{page_routes.length}+</span>
+              <span>Help Articles</span>
             </div>
-            <div className="hidden sm:block w-1 h-1 rounded-full bg-muted-foreground/30" />
+            <div className="hidden sm:block w-1 h-1 rounded-full bg-primary" />
             <div className="flex items-center gap-2">
               <span className="font-semibold text-foreground">{allBlogs.length}+</span>
               <span>Blog Posts</span>
             </div>
-            <div className="hidden sm:block w-1 h-1 rounded-full bg-muted-foreground/30" />
+            <div className="hidden sm:block w-1 h-1 rounded-full bg-primary" />
             <div className="flex items-center gap-2">
               <span className="font-semibold text-foreground">100%</span>
               <span>Open Source</span>

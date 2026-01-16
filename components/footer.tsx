@@ -12,7 +12,7 @@ export function Footer() {
             <HugeiconsIcon icon={CommandIcon} className="sm:block hidden w-5 h-5 text-muted-foreground" />
             <p className="text-center">
               Built by{" "}
-              <Link className="px-1 underline underline-offset-2" href="https://ldo.dev">
+              <Link className="px-1 underline underline-offset-2" href="https://ldo.dev" target="_blank">
                 v0sudo
               </Link>
               .
@@ -20,15 +20,14 @@ export function Footer() {
           </div>
           <p className="text-center">
             The source code is available on{" "}
-            <Link className="px-1 underline underline-offset-2" href="https://github.com/acertine/docs">
+            <Link className="px-1 underline underline-offset-2" href="https://github.com/acertine/docs" target="_blank">
               GitHub
             </Link>
             .
           </p>
           <p className="text-center flex">
-            Follow us on{" "}
-            <Link className="px-1 underline underline-offset-2 flex items-center gap-2" href="https://x.com/byAcertine">
-              <HugeiconsIcon icon={NewTwitterIcon} className="w-4 h-4 font-extrabold" /> ByAcertine
+            <Link className="px-1 underline underline-offset-2 flex items-center gap-2" href="https://x.com/intent/follow?screen_name=ByAcertine" target="_blank">
+              Follow us on <HugeiconsIcon icon={NewTwitterIcon} className="w-4 h-4 font-extrabold" />
             </Link>
           </p>
         </div>
