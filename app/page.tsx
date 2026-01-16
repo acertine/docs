@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Acertine Docs",
     images: [
       {
-        url: "/public-og.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Acertine Docs",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Acertine Docs",
     description: "Comprehensive help center and documentation for Acertine Flow.",
-    images: ["/public-og.png"],
+    images: ["/og-image.png"],
   },
   alternates: {
     canonical: "https://flow.acertine.com",

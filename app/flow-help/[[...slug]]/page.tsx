@@ -116,7 +116,7 @@ export async function generateMetadata(props: PageProps) {
       type: "article",
       images: [
         {
-          url: "/public-og.png",
+          url: "/og-image.png",
           width: 1200,
           height: 630,
           alt: title,
@@ -127,7 +127,7 @@ export async function generateMetadata(props: PageProps) {
       card: "summary_large_image",
       title: `${title} | Acertine Flow Help`,
       description,
-      images: ["/public-og.png"],
+      images: ["/og-image.png"],
     },
   };
 }
