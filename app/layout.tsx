@@ -97,7 +97,7 @@ export const metadata: Metadata = {
     description: "Comprehensive documentation for Acertine. Learn how to use Acertine to its full potential.",
     images: [
       {
-        url: "/public-og.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Acertine Docs",
@@ -108,7 +108,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Acertine Docs - Documentation & Guides",
     description: "Comprehensive documentation for Acertine.",
-    images: ["/public-og.png"],
+    images: ["/og-image.png"],
     creator: "@acertine",
   },
   alternates: {
@@ -136,12 +136,7 @@ export default function RootLayout({
           gtag("config", "G-P05MZVJ5H7");
         `}
         </Script>
-        <Script
-          data-website-id="dfid_Kt1kSBd0rDBTkKpKHgmS5"
-          data-domain="docs.acertine.com"
-          data-allow-localhost="true"
-          src="https://datafa.st/js/script.js"
-        />
+        <Script data-website-id="dfid_Kt1kSBd0rDBTkKpKHgmS5" data-domain="docs.acertine.com" data-allow-localhost="true" src="https://datafa.st/js/script.js" />
         <meta name="apple-mobile-web-app-title" content="Acertine" />
 
         <meta name="theme-color" content="#009966" />
