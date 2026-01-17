@@ -1,0 +1,192 @@
+---
+title: Automatic Late Payment Fees
+description: Learn how to set up automatic late payment fees that are applied to overdue invoices automatically, saving you time and ensuring you get paid on time.
+---
+
+## Overview
+
+The automatic late payment fee system helps you get paid on time by automatically adding late fees to overdue invoices. Once you set it up, Flow handles everything for you - no need to manually track overdue invoices or send reminders.
+
+## Features
+
+- **Fully Automatic**: Late fees are added automatically every day
+- **No Duplicates**: Each invoice only gets one late fee - the system prevents duplicates
+- **Flexible Options**: Choose between a fixed amount or percentage-based fees
+- **Grace Period**: Give clients extra time before fees apply
+- **Auto-Updates**: Invoice totals and payment links update automatically
+- **Clear & Transparent**: Late fees appear as separate line items on invoices
+
+## Requirements
+
+1. **Premium Subscription**: Late payment fees are available on Starter or Professional plans
+2. **Sent Invoices**: Only applies to invoices you've already sent to clients
+3. **System Active**: The automatic system runs daily in the background
+
+## Configuration Steps
+
+### Step 1: Navigate to Banking Settings
+
+1. Log into your Flow account
+2. Go to **Settings** → **Banking**
+3. Scroll to the **Late Payment Fees** section
+
+### Step 2: Enable Late Payment Fees
+
+1. Select your **Fee Type**:
+   - **Disabled**: Turn off late payment fees
+   - **Fixed Amount**: Charge a fixed fee (e.g., £25, $50)
+   - **Percentage**: Charge a percentage of the invoice total (e.g., 5%, 10%)
+
+### Step 3: Configure Fee Amount
+
+**For Fixed Amount:**
+- Enter the amount you want to charge (e.g., `25` for £25)
+
+**For Percentage:**
+- Enter the percentage (e.g., `5` for 5%)
+- Calculated based on the original invoice total (before late fees)
+
+### Step 4: Set Grace Period (Optional)
+
+- Enter the number of days after the due date before fees apply
+- Default: `0` (fees apply immediately after due date)
+- Example: `7` means fees apply 7 days after the due date
+
+### Step 5: Save Settings
+
+Click **Save** to apply your late payment fee configuration.
+
+## How It Works
+
+### Automatic Daily Process
+
+Every day, Flow automatically:
+
+1. **Checks Your Settings**: Looks for accounts with late payment fees enabled and configured
+
+2. **Finds Overdue Invoices**: Identifies invoices that:
+   - Have been sent to clients
+   - Are unpaid
+   - Are past their due date (plus any grace period you've set)
+   - Don't already have a late fee
+
+3. **Calculates the Fee**:
+   - **Fixed Amount**: Uses the amount you set (e.g., £25)
+   - **Percentage**: Calculates a percentage of the original invoice total
+
+4. **Adds the Late Fee**:
+   - Adds "Late Payment Fee" as a new line item on the invoice
+   - Updates the invoice total automatically
+   - Your client sees the updated amount immediately
+
+5. **Updates Payment Links**: If you have Stripe enabled, payment links are automatically updated with the new total
+
+### Example Scenarios
+
+#### Scenario 1: Fixed Fee
+
+**Configuration:**
+- Fee Type: Fixed Amount
+- Fee Amount: £25
+- Grace Period: 0 days
+
+**Invoice Details:**
+- Invoice Total: £500
+- Due Date: January 1, 2024
+- Status: Sent, Unpaid
+
+**Result:**
+- On January 2, 2024 (the day after the due date), Flow automatically adds a £25 late fee
+- New invoice total: £525
+- Payment link is updated to show the new total of £525
+
+#### Scenario 2: Percentage Fee with Grace Period
+
+**Configuration:**
+- Fee Type: Percentage
+- Fee Amount: 5%
+- Grace Period: 7 days
+
+**Invoice Details:**
+- Invoice Total: £1,000
+- Due Date: January 1, 2024
+- Status: Sent, Unpaid
+
+**Result:**
+- On January 8, 2024 (7 days after the due date), Flow automatically calculates and adds a 5% late fee
+- Late fee: £1,000 × 5% = £50
+- New invoice total: £1,050
+- Payment link is updated to show the new total of £1,050
+
+#### Scenario 3: Already Paid Invoice
+
+**Invoice Details:**
+- Invoice Total: £500
+- Due Date: January 1, 2024
+- Paid Date: January 3, 2024
+
+**Result:**
+- Flow skips this invoice because it's already been paid
+- No late fee is applied
+
+## Important Notes
+
+### How Fees Are Calculated
+
+- **Percentage Fees**: Calculated based on the original invoice amount (before any late fees)
+- **Fixed Fees**: Uses the exact amount you set in your settings
+- **One Fee Per Invoice**: Each invoice can only have one late fee applied - the system prevents duplicates
+
+### When Fees Are Applied
+
+- Late fees are added automatically every day
+- Only applies to invoices that have been sent to clients
+- Skips invoices that are already paid
+- Respects your grace period setting
+
+## Troubleshooting
+
+### Late Fees Not Being Applied
+
+1. **Check Your Plan**: Make sure you're on a Starter or Professional plan
+2. **Verify Settings**: Go to Settings → Banking and confirm your fee type and amount are set
+3. **Check Invoice Status**: Late fees only apply to:
+   - Invoices you've sent to clients (not drafts)
+   - Invoices that are unpaid
+   - Invoices past their due date (plus your grace period)
+4. **Wait a Day**: The system checks daily, so fees may appear the day after an invoice becomes overdue
+5. **Contact Support**: If fees still aren't applying, contact support for assistance
+
+### Late Fee Already Applied
+
+- The system prevents duplicate fees
+- Each invoice can only have one late fee
+- If you need to adjust, manually edit the invoice
+
+### Payment Link Not Updating
+
+- Make sure Stripe payments are set up in your Banking settings
+- Check that your Stripe account is properly connected
+- Payment links should update automatically - if they don't, contact support
+
+### Incorrect Fee Amount
+
+**For Percentage Fees:**
+- The percentage is calculated on the original invoice amount (before any late fees)
+- Make sure you've entered the percentage correctly (e.g., enter `5` for 5%)
+
+**For Fixed Fees:**
+- Double-check the amount in your Banking settings
+- Make sure the amount is between £5 and £200
+
+## Best Practices
+
+1. **Set a Grace Period**: Give clients a few days after the due date before fees apply - this shows good will and helps maintain relationships
+2. **Communicate Upfront**: Let clients know about your late payment fee policy before sending invoices
+3. **Choose Reasonable Amounts**: Set fees that are fair but encourage timely payment
+4. **Review Regularly**: Check your settings periodically to make sure they still work for your business
+5. **Start Small**: Consider testing with a small fee amount first to see how it works for you
+
+## Need Help?
+
+If you have questions about setting up late payment fees or need assistance, contact our support team. We're here to help!

@@ -63,6 +63,7 @@ export const ROUTES: EachRoute[] = [
     items: [
       { title: "Setting Up Stripe Connect", href: "/setting-up-stripe-connect" },
       { title: "Tracking Payments", href: "/tracking-payments" },
+      { title: "Automatic Late Payment Fees", href: "/automatic-late-payment-fees" },
     ],
   },
   {
